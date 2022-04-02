@@ -96,8 +96,8 @@ if days_number > 0:
 
 else:
     days_left = abs(days_number)
-    while DayNumberInYear(current_day, current_month, current_year) - days_left  < 0 :
-        days_left -= GetDaysInYear(current_year)
+    while day_number_in_year(current_day, current_month, current_year) - days_left < 0:
+        days_left -= day_number_in_year(current_day, current_month, current_year)
         current_year -= 1
         current_month = 12
         current_day = 31
